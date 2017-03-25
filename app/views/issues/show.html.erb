@@ -6,12 +6,5 @@
 
 <hr>
 
-<% @comments.each do |item| %>
-<ul>
-    <li>Username: <%= item.username%> </li>
-    <li>Email: <%= item.email%> </li>
-    <li>Content: <%= item.content%> </li>
-</ul>
-<% end %>
-
+<%= render partial: 'shared/comment_list', locals: {comments:@comments} %>
 <%= render partial: 'shared/comment_box', locals: {issue:@issue} %>
