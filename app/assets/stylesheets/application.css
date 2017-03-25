@@ -13,3 +13,5 @@
  *= require_tree .
  *= require_self
  */
+table{width:100%;}
+table td{border:1px solid #ccc}

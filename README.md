@@ -1,7 +1,6 @@
 # rails-module-has-many
 > Rails module for one to many.
 
-
 ## Step by step
 + create database:
 ```bash
@@ -27,7 +26,7 @@ rails g model Comment content:text username:string email:string issue_id:integer
 rake db:migrate
 ```
 
-## 3 key points:
+## Key points:
 + Comments table must have `issue_id`
 + Issue model must have this structure:
 ```ruby
@@ -43,25 +42,5 @@ end
 ```
 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## resouces:
++ http://happypeter.github.io/rails10/13_comment.html
