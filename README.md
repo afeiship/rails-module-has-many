@@ -50,7 +50,7 @@ rake db:migrate
 ```rb
 # model/teacher.rb
 class Teacher < ApplicationRecord
-    has_may :courses
+    has_many :courses
 end
 
 
